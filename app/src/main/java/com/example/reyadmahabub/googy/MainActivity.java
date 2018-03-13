@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
                recyclerView.setLayoutManager( llm );
                recyclerView.setAdapter( adapter );
 
+
            }
 
            @Override

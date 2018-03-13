@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -63,6 +64,13 @@ public class ResponseAdapter extends RecyclerView.Adapter<ResponseAdapter.Respon
         public ResponseViewHolder(View itemView) {
             super( itemView );
             titleTV=itemView.findViewById( R.id.title );
+            itemView.setOnClickListener( new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    int position=getAdapterPosition();
+                    Toast.makeText( context, ""+responses.get( position ).getId(), Toast.LENGTH_SHORT ).show();
+                }
+            } );
 
         }
     }

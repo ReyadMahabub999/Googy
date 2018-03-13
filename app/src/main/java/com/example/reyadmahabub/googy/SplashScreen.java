@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class SplashScreen extends AppCompatActivity {
-private final int Splash_screen_time=5000;
+private final int Splash_screen_time=3000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
