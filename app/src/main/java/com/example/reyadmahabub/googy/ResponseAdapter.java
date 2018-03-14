@@ -80,8 +80,8 @@ public class ResponseAdapter extends RecyclerView.Adapter<ResponseAdapter.Respon
                     TextView title=ll.findViewById( R.id.titleTV );
                     TextView body=ll.findViewById( R.id.bodyTV );
 
-                    title.setText( responses.get( position ).getTitle() );
-                    body.setText( responses.get( position ).getBody() );
+                    title.setText("Title\n"+ responses.get( position ).getTitle() );
+                    body.setText("Body\n"+ responses.get( position ).getBody() );
 
 
                     builder.setNegativeButton( "cancel", new DialogInterface.OnClickListener() {
